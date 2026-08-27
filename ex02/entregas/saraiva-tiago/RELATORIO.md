@@ -39,7 +39,7 @@ Para cada alteração, informe:
 
 **Por que era um problema:** Pessoas que usam leitor de tela não recebiam o propósito dos links, e a navegação dependia de JavaScript. Isso também dificultava a compreensão da página atual.
 
-**O que mudei:** Substituí os destinos por links HTML normais, mantive os pontos na aparência visual e forneci nomes acessíveis para “Página inicial”, “Ingressos” e “Contato”. Marquei “Ingressos” com `aria-current="page"` e dei um nome à região de navegação.
+**O que mudei:** Substituí os destinos por links HTML normais (sem `javascript:`) e usei rótulos visíveis e acessíveis para “Início”, “Ingressos” e “Contato”. Marquei “Ingressos” com `aria-current="page"` e dei um nome à região de navegação.
 
 **Critério do WCAG:** 2.4.4 Finalidade do link; 2.4.8 Localização; 4.1.2 Nome, função, valor.
 
