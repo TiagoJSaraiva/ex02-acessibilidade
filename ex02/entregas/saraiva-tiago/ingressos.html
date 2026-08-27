@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingressos | Luzes da Cidade</title>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="link-pular" href="#conteudo">Pular para o conteúdo principal</a>
+
+<div class="pagina">
+
+<header class="topo-portal">
+  <img src="../../img/logotipo.png" alt="Luzes da Cidade — seu acesso à cultura">
+  <p class="texto-apoio">Portal de eventos culturais</p>
+</header>
+
+<nav class="menu-portal" aria-label="Navegação principal">
+  <a href="inicio.html" aria-label="Página inicial"><span aria-hidden="true">Inicio</span></a>
+  <a href="ingressos.html" aria-current="page" aria-label="Ingressos"><span aria-hidden="true">Ingressos</span></a>
+  <a href="contato.html" aria-label="Contato"><span aria-hidden="true">Contato</span></a>
+</nav>
+
+<main id="conteudo">
+  <h1 class="titulo-pagina"><img src="../../img/titulo-precos.png" alt="Tabela de preços"></h1>
+
+  <p id="descricao-precos">Valores por espetáculo e por categoria de público.</p>
+
+  <table class="tabela-precos" aria-describedby="descricao-precos">
+    <caption class="sr-only">Tabela de preços por espetáculo e categoria de público.</caption>
+    <thead>
+      <tr class="linha-cabecalho">
+        <th scope="col">Espetáculo</th>
+        <th scope="col"><abbr title="Inteira">INT</abbr></th>
+        <th scope="col"><abbr title="Meia-entrada">MEI</abbr></th>
+        <th scope="col"><abbr title="Estudante">EST</abbr></th>
+        <th scope="col"><abbr title="Idoso">IDO</abbr></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Orquestra Sinfônica da Serra</th>
+        <td>R$ 60,00</td>
+        <td>R$ 30,00</td>
+        <td>R$ 24,00</td>
+        <td>R$ 30,00</td>
+      </tr>
+      <tr>
+        <th scope="row">Companhia Teatral Muda</th>
+        <td>R$ 45,00</td>
+        <td>R$ 22,50</td>
+        <td>R$ 18,00</td>
+        <td>R$ 22,50</td>
+      </tr>
+      <tr>
+        <th scope="row">Grupo Passo Livre</th>
+        <td>R$ 50,00</td>
+        <td>R$ 25,00</td>
+        <td>R$ 20,00</td>
+        <td>R$ 25,00</td>
+      </tr>
+      <tr class="linha-secao">
+        <th colspan="5" scope="rowgroup">Sessões extras de dezembro</th>
+      </tr>
+      <tr>
+        <th scope="row">Orquestra Sinfônica da Serra</th>
+        <td>R$ 70,00</td>
+        <td>R$ 35,00</td>
+        <td>R$ 28,00</td>
+        <td>R$ 35,00</td>
+      </tr>
+      <tr>
+        <th scope="row">Grupo Passo Livre</th>
+        <td>R$ 58,00</td>
+        <td>R$ 29,00</td>
+        <td>R$ 23,20</td>
+        <td>R$ 29,00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section aria-labelledby="compra-telefone">
+    <h2 id="compra-telefone" class="titulo-falso">Compra por telefone</h2>
+
+    <img src="../../img/telefone.png" alt="Central de vendas: (12) 3668-9620">
+
+    <p class="texto-apoio">Atendimento de segunda a sexta, das 9h às 18h.</p>
+
+    <button type="button" class="botao-falso" onclick="alert('Reserva iniciada.');">Reservar ingresso</button>
+  </section>
+</main>
+
+<footer class="rodape-portal">
+  Luzes da Cidade, portal fictício criado para fins didáticos.
+</footer>
+
+</div>
+
+<div vw class="enabled">
+  <div vw-access-button class="active" aria-label="Abrir tradução em Libras"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>
